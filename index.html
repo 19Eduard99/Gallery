@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Галерея</title>
+</head>
+<body>
+<div class="gallery-app">
+    <h1>Image Gallery</h1>
+    <form id="image-form">
+        <input type="url" name="url" id="image-url" placeholder="Image URL" pattern="https://.*" required>
+        <button type="submit">Add Image</button>
+    </form>
+    <div id="gallery">
+    </div>
+</div>
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+</div>
+<script src="script.js"></script>
+</body>
+</html>
